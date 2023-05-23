@@ -22,21 +22,17 @@ describe('Parabank test cases', () => {
   require('chai');
   
   it('Log In', () => {
-    //Test case 1 - Log in 
      login(dataJson.username,dataJson.password);
   })
   it('Click Home Button', () => {
-    //Test case 2 - visit About Us page
     clickAboutUsSqareButton();
     clickHomeButton();
-    //cy.xpath("//h1[contains(.,'ParaSoft Demo Website')]").should('be.visible')
   })
   it('Click About Us square button', () => {
-    //Test case 3 - visit Services page
+
     clickAboutUsSqareButton();
   })
   it('Click Contact button', () => {
-    //Test case 4 - visit Admin page
     clickContactButton();
   })
 
